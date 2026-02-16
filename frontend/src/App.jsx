@@ -105,7 +105,7 @@ export default function App() {
   return (
     <div className="app">
       <header>
-        <h1>Keep Clone MVP</h1>
+        <h1>KeepLite</h1>
         <div className="toolbar">
           <input
             placeholder="Search title, content, tags..."

@@ -1,6 +1,6 @@
-# Google Keep Clone MVP
+# KeepLite
 
-Docker-installable MVP of a Google Keep style notes app.
+Docker-installable MVP of a KeepLite notes app.
 
 ## Stack
 - **Backend:** Node.js + Express + SQLite

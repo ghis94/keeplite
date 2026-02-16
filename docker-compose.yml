@@ -2,7 +2,7 @@ version: '3.9'
 services:
   backend:
     build: ./backend
-    container_name: keep-clone-backend
+    container_name: keeplite-backend
     ports:
       - "4000:4000"
     volumes:
@@ -11,7 +11,7 @@ services:
 
   frontend:
     build: ./frontend
-    container_name: keep-clone-frontend
+    container_name: keeplite-frontend
     ports:
       - "5173:5173"
     environment:
