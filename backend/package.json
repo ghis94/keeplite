@@ -1,15 +1,26 @@
 {
   "name": "keeplite-backend",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node --watch server.js"
+    "dev": "node --watch server.js",
+    "test": "node --test",
+    "lint": "find . -name '*.js' -not -path './node_modules/*' -print0 | xargs -0 -n1 node --check"
   },
   "dependencies": {
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
+    "bcryptjs": "^2.4.3",
     "express": "^4.21.2",
-    "sqlite3": "^5.1.7"
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "sqlite3": "^5.1.7",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.0"
   }
 }
